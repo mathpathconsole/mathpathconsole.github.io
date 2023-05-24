@@ -1,0 +1,648 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="google-site-verification" content="RZG2cTJmOfD4w7AxbaPV9y1Dq0Xbu_DOZ-0GrbT7WBE" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathpath Console</title>
+    <style type="text/css">
+        
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+ul, li, ol {
+    list-style: none;
+    }
+
+    a {
+    text-decoration: none;
+}
+body, main{
+    margin: 0 auto;
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+/* css untuk header */
+header {
+    position: fixed;
+    top:0;
+    height: 52px;
+    width: 100%;
+    color: rgba(255, 253, 253, 0.87);
+    background-color: rgba(0,0,0,0.92);
+    z-index: 10;
+  }
+
+
+.header-wrapper {
+
+    /* text-align: center;
+    line-height: 50px;
+    font-size: 30px; */
+  }
+
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0;
+    /* margin-left:50px; */
+    
+
+}
+.header-list li{
+    margin: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+.header-list li a{
+    text-decoration: none;
+    color: #f5f5f7;
+}
+.header-list a {
+    
+  /* margin-left:50px; 
+  font-size:20px;
+  margin-bottom:10px;   
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;  */
+
+}
+.logo{
+    width: 25px;
+    /* width: 30px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    float:left;
+    margin-left:30px; */
+}
+span{
+    /* margin-left:20px;
+    float:left; */
+}
+
+
+.search{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:30px;
+    float:right;
+    background-color: rgba(0,0,0,0.92);
+    border-radius:10px;
+}
+/* header */
+
+
+/* container global - disabled */
+
+/* .container {
+    margin: 0 20px;
+  }
+*/
+
+.contents {
+    background-color: white;
+}
+
+
+.image-container .iphone-12 {
+    height: 640px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.iphone-12 {
+    height: 100%;
+    
+    background-image: url(https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/intro.gif?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+    }
+
+.iphone-12 .title {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+.iphone-12 .title h1 {
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.897);
+    font-weight: 700;
+}
+.iphone-12 .title p {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(41, 41, 41, 0.89)
+}
+
+ .cta-links {
+    text-align: center;
+}
+
+.image-container .iphone-12-pro {
+    height: 640px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.iphone-12-pro {
+    height: 90%;
+    min-height: 100%;
+    background-image: url(https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/earth0.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iphone-12-pro .title {
+    text-align: center;
+}
+
+.iphone-12-pro .title h1 {
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.897);
+    font-weight: 700;
+}
+
+.iphone-12-pro .title p {
+    font-size: 30px;
+    font-weight: normal;
+    color: rgba(255, 253, 253, 0.87)
+}
+
+.iphone-12-pro .cta-links {
+    text-align: center;
+}
+.image-container .fitness {
+    height: 500px;
+    width: 100%;
+    padding-top: 0%;
+    flex: auto;
+    
+}
+
+.fitness {
+    height: 90%;
+    min-height: 100%;
+    background-image: url(https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/3.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 00px;
+}
+
+.title .hello {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.897);
+    font-weight: 700;
+}
+
+
+
+ .title .A {
+     text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.87)
+    
+}
+
+.fitness .cta-links {
+    text-align: center;
+}
+
+/* main */
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+  }
+  li {
+    color: white;
+    height: 770px;
+  }
+  ul li{
+      margin-bottom: 5px;
+  }
+
+  .flex-list{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .flex-list li{
+      flex: auto;
+      width: 50%;
+  }
+  .img{
+      margin: 0 auto;
+      width: 100%;
+  }
+  .headline{
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+  .content{
+      overflow: hidden;
+  }
+  /* main themes content */
+  .theme-dark{
+    background-color: #000;
+    margin: 0 auto;
+  }
+  .theme-light{
+    background-color: #fbfbfd;
+    margin: 0 auto;
+    color: #1D1D1F;
+  }
+  .container-main{
+    width: 98%;
+    height: 100%;
+  }
+
+  ul li img{
+      width: 100%;
+  }
+
+  .cta-links a{
+      font-size: 23px;
+      margin-right: 20px;
+      text-decoration: none;
+      color: #2997FF;
+      font-weight: normal;
+  }
+  .cta-links a:hover{
+      text-decoration: underline;
+  }
+  
+  /* hover zoom products animation */
+  .unit-image figure img{
+      transition: transform .2s;
+  }
+  .unit-image figure img:hover{
+      transform: scale(1.05);
+  }
+  .apple-watch-logo{
+    width: 25%;
+}
+/* main */
+
+
+  /* css untuk footer */
+
+  footer {
+      background-color: #f5f5f7;
+      padding: 40px;
+      height: 635px;
+      color: #1d1d1f;
+  }
+
+  .logo-footer {
+      width: 50px;
+      margin-bottom: 10px;
+  }
+
+  .txt-copy {
+      margin: 0;
+  }
+
+  .txt-copy a {
+      color: #fff;
+  }
+
+  .txt-copy a:hover {
+      text-decoration: underline;
+  }
+  .footer-container{
+      display: flex;
+  }
+  .footer-list {
+      float: left;
+      width: 30%;
+      margin: 0 auto;
+     
+  }
+
+  .footer-list p a {
+      color: #1d1d1f;
+  }
+
+  .footer-list p a:hover {
+      text-decoration: underline;
+  }
+
+  .clear-footer {
+      clear: left;
+  }
+  .foot-notes ul li{
+      color: #86868b;
+      height: 2em;
+      margin: 10px 0;
+      text-align: left;
+  }
+  .footer-container, .footer-list-container{
+      width: 70%;
+      margin: 0 auto;
+  }
+/* footer */
+
+/* responsive */
+.menu-logo{
+    visibility: hidden;
+    position: absolute;
+}
+.fa-searchs{
+    visibility: hidden;
+}
+
+
+
+/* tablet size viewport */
+@media (max-width: 1024px){
+    .flex-list{
+        flex-wrap: wrap;
+    }
+
+    .flex-list li{
+        width: 50%;
+        height: 400px;
+    }
+    .foot-notes{
+        height: 500px;
+    }
+    footer{
+        height: 1100px;
+    }
+    .fa-searchs{
+        visibility: visible;
+    }
+    .search{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+    
+/* smartphone/handphone */
+@media (max-width: 670px){
+    .flex-list{
+        flex-direction: column;
+    }
+    .flex-list li, .img-container{
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+    }
+    .container-main{
+        width: 100%;
+    }
+    .hp-viewport-hide{
+        visibility: hidden;
+    }
+    .menu-logo{
+        visibility: visible;
+    }
+    .hp-viewport{
+        position: absolute;
+        
+    }
+    .header-shoping{
+        right: 10px;
+
+    }
+    .apple-header{
+        margin: 0 auto;
+    }
+    .menu-logo{
+        top: 18px;
+        left: 30px;
+    }
+    .footer-container, .footer-list-container{
+        width: 100%;
+    }
+    footer{
+        height: 800px;
+    }
+    .foot-notes{
+        height: 0;
+    }
+    .foot-notes ul li{
+        margin-bottom: 100px;
+        display: none;
+    }
+}
+    </style>
+    <!-- <link rel="stylesheet" href="reset.css"> buat reset css -->
+    <link rel="icon" href="https://icons.iconarchive.com/icons/alecive/flatwoken/256/Apps-Libreoffice-Math-B-icon.png" type="image/jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Bagian header-->
+    <header>
+        <div class="header-wrapper">
+            <span class="menu-logo hp-viewport fas fa-ellipsis-h"></span>
+            <ul class="header-list">
+                
+                <li class="header-content hp-viewport apple-header"><a href="#"><img style="width: 80px; margin-left: -40px; margin-top: 52px" class="logo" src="https://icons.iconarchive.com/icons/alecive/flatwoken/256/Apps-Libreoffice-Math-B-icon.png"></a></li>
+                
+              
+                <li style="font-size: 12px;" class="header-content hp-viewport-hide"><a href="#hakkimda">About Us</a></li>
+                <li style="font-size: 12px;" class="header-content hp-viewport-hide"><a href="#Contributors">Contributors</a></li>
+                <li  style="font-size: 12px;" class="header-content hp-viewport-hide"><a href="https://drive.google.com/file/d/1wcoRGcbFdvGcfHDdjqSfJVpacvLnLnQr/view">Download</a></li>
+                <li style="font-size: 10px;"  class="header-content hp-viewport-hide"><a href="https://www.buymeacoffee.com/mathconsole">Support Us</a></li>
+                
+                
+                <li class="header-content hp-viewport-hide fa-searchs"><a href="#" class="fas fa-search"></a></li>
+                <input class="search" placeholder="search" type="search" name="">
+                <!-- masukkin input search -->
+
+              
+            </ul>
+
+        </div>
+    </div>
+    </header>
+    <!-- header -->
+
+    <main>
+
+        <!-- Bagian content atas -->
+
+<div style="position: fixed; top: 50%; right: 20px; z-index: 10000;">
+  <button style="background-color: #999; color: white; border: none; border-radius: 5px; padding: 8px 16px; cursor: pointer; font-size: 16px;" onclick="toggleContact()">
+    <span style="display: flex; align-items: center;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+        <path d="M14 3H2c-.55 0-1 .45-1 1v8c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zm0 1L8 8 2 4h12zM1 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3zm0 2v8l5-4 5 4V5L6 9 1 5z"/>
+      </svg>
+      <span style="margin-left: 5px;">Contact</span>
+    </span>
+  </button>
+</div>
+
+
+
+<div id="contactInfo" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; background-color: rgba(255, 255, 255, 0.9); padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);">
+  <div style="position: relative; text-align: center;">
+    <img src="https://media.tenor.com/CFcpFRO4PjYAAAAj/test.gif" alt="Animation" style="max-width: 100%;">
+    <br>
+    <button onclick="openGmail()" style="background-color: whitesmoke; color: black; border: none; border-radius: 5px; padding: 8px 16px; cursor: pointer; font-size: 18px; margin-top: 10px;">help.starsofthesky@gmail.com</button>
+  </div>
+</div>
+
+<script>
+  function toggleContact() {
+    var contactDiv = document.getElementById("contactInfo");
+    contactDiv.style.display = (contactDiv.style.display === "none") ? "block" : "none";
+    setTimeout(function() {
+      contactDiv.style.display = "none"; // Hide the contact box after 2 seconds
+    }, 2000);
+    setTimeout(openGmail, 2000); // Delayed execution of the openGmail function after 2 seconds
+  }
+  
+  function openGmail() {
+    window.open("mailto:help.starsofthesky@gmail.com");
+  }
+</script>
+
+
+        <div class="container">
+            <div class="contents">
+                <div class="image-container"  style="cursor: pointer;">
+                    <div class="iphone-12">
+                        <div class="title">
+                           
+
+                            <p style="font-size: 32px;  margin-top: 145px; margin-left: -1200px; color: rgba(0, 0, 180, 0.6);  ">Mathpath Console<br><s1 style="font-size: 24px;  color: rgba(0, 0, 0, 0.4);  ">Version Mp-3.0</s1></p>
+                            
+
+                        </div>
+
+                          <a href="https://drive.google.com/file/d/1wcoRGcbFdvGcfHDdjqSfJVpacvLnLnQr/view"   >   <img style="width: 120px; margin-left: 91px; margin-top: 50px;  " src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/download-2-icon.png">
+                   </a><br>
+                        <a href="https://play.google.com/store/apps/details?id=org.mathconsole_lite.mathconsole_lite&gl=TR"   >   <img style="width: 290px; margin-left: 11px; margin-top: 7px; " src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhmIqE7kWiZMWx8b7TLYnKZ_TVBhOTPSb7TRJDcCSQ0PyIoDdfGe2A6HrMELN9sovFLo0CZPujl0w0ZmwWeb_f9gq_ZKGcDPH3TwzSvqC8d7oYWRo1RIDzNdgtSL6Sa2uSpwtpB-sF7SqcPOp4ZyxC_P8nifsPES8ibg75uF-NIzBrASgCYs7M2utE/s320/google-play-badge.png">
+                   </a>
+                    </div>
+                </div>
+                <div id="hakkimda" class="image-container"  style="cursor: pointer;">
+                    <div class="iphone-12-pro">
+                        <div class="title">
+                            <h1 style="color: white; font-size: 40px;margin: 20%; margin-top: 35px; font-family: 'Courier New', monospace;" >About Us</h1>
+                           
+                            <p style="font-size: 20px; margin: 20%; margin-top: -230px; "> 
+                           <strong>Mathpath is</strong> about mathematics-physics. It has dynamic refreshing moment by moment. Written with Python. And it uses for mathematical subprocess is SymPy library. But not all is bases of SymPy. Created for students Pieces of MathPath. If you found a bug or mathematical error(pretty rare or no have) is probably not cause of SymPy library. This can be editing error. Please contact us swiftly, if a especially mathematical error. Also MathPath have free-text universal mathematical code(e.g. Wolfram alpha, Maple...). And there are prepared structures to do quickly solutions. 
+                           <br><br><strong>I'm Reşat Berk</strong>, studying of physics at college. And I'm thinking programming is a huge door of creativity. One day I decided that improving mathematical app with Python for mobile and desktop. First time, I'm thought for students and still developing it by free time. But I realized that: "we should improve a big useful app together willing students. It is free or cheap. Then I created a group with my college friends. Some still continue to contribute or provide feedback. The all pieces of imagine can improving. <br><br><br><br><strong>Our mission is</strong>: Developing easy-tools(useful) for whole students or education and with students do this. Mathpath is a just starter that way. | Stanford University; "<i>improving lives through learning.</i>" <i>And "We envision a world where all learners are prepared to thrive in a dynamic future.</i>" 
+</p><br>
+                        </div>
+                       
+                    </div>
+                </div>
+
+        <div class="title">
+                  <br>
+                <div class="image-container">
+                <div class="fitness" style="cursor: pointer;"></div>          
+                    </div>
+</div>
+</div>
+
+            </div>
+        </div>
+  
+        </ul>
+    </main>
+
+    <!-- Bagian footer-->
+    <footer  id="Contributors">
+        <div  class="footer-container">
+            <div    class="foot-notes">
+                <ul>
+                   <br>
+                    <h1 >  Contributors </h1>
+
+                    <li style=" font-size: 22px;  color: rgba(0, 0, 0, 1.0); margin-left: 22%;" >
+                       
+
+
+
+<h1 style="margin-left: -54px; font-size: auto; color: rgba(0, 0, 0, 0.4);"> We're improving with together and we works good things for humanity.</h1>
+
+<br>
+
+<strong>Eda </strong> - <i>Physics Student </i>•Contributor and tester <br>
+<strong>Besat </strong> • <i>Helpful tester and designer </i><br>
+<strong>Atakan </strong> • <i>Computer Engineering Student[Graduate] </i> <br>
+<strong>Hakikat </strong> - <i>Molecular biology </i>•tester <br>
+<strong>Vepa </strong> - <i>Physics Student </i>•spreading <br>
+
+<br>
+<strong>Reşat Berk  </strong>• Developer<br>
+
+
+                    </li>
+                
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+  <center> 
+    <br><br><br>
+<br>
+
+<div style="display: flex; margin-left: 24%; margin-top: 285px;">  
+    <div>
+    
+
+<a href="https://mathpath-sky.blogspot.com/"><img style="width: 25%"  src="https://icons.iconarchive.com/icons/rafiqul-hassan/blogger/256/Home-icon.png"></a>
+</div>
+<div>    
+
+<a href="https://www.youtube.com/@mathpath-starsofthesky4129"><img style="width: 25%"  src="https://icons.iconarchive.com/icons/dakirby309/simply-styled/256/YouTube-icon.png"></a>
+</div>
+
+<div>
+    <a href="https://github.com/mathpathconsole/mathpath"><img style="width: 25%"  src="https://icons.iconarchive.com/icons/pictogrammers/material/256/github-icon.png"></a>
+
+</div>
+
+
+</div></center> 
+
+
+    </footer>
+
+
+<br><br>
+    <center>  
+    <div>
+©2023, Mathpath | StarsoftheSky - Besat.<strong>"Chill Skies Memories" </strong></center>
+
+ </div>
+<br><br>
+   
+
+</body>
+</html>
