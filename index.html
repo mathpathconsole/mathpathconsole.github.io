@@ -214,7 +214,11 @@
 /* Mobil cihazlar için özel ayar */
 @media screen and (max-width: 768px) {
   .hero-container {
-     min-height: 400px;
+    min-height: 400px;
+    max-width: 100%;
+    width: 100vw; /* görünür ekran genişliği kadar */
+    overflow-x: hidden; /* taşmayı önle */
+    box-sizing: border-box;
   }
 }
 .bg-transparent {
