@@ -206,23 +206,18 @@
 .hero-container {
   background-image: url('https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/Stars%20sign.jpg?raw=true');
   background-repeat: no-repeat;
-  background-position: center top; /* Üstten ortalanmış */
-  background-size: contain; /* Görselin orijinal boyutları korunur */
+  background-position: center top;
+  background-size: contain;
   padding-top: 0 !important;
-  width: 100%; /* Ekran genişliği kadar */
-  height: auto; /* Yükseklik orijinal boyuta göre ayarlanır */
-  overflow-x: hidden; /* Taşma engellenir */
 }
 
-/* Mobil cihazlar için özel ayar */
+/* Mobil cihazlar için: yükseklik artırılır */
 @media screen and (max-width: 768px) {
   .hero-container {
-    height: 100vh; /* Ekranın tam yüksekliği kadar */
-    min-height: 400px; /* Yükseklik için minimum değer */
-    width: 100vw; /* Ekranın tam genişliği kadar */
-    max-width: 100%; /* Taşmayı engellemek için */
-    overflow-x: hidden; /* Taşma engellenir */
-    box-sizing: border-box;
+    min-height: 320px; /* ya da 400px deneyebilirsin */
+  }
+}
+ 
 .bg-transparent {
   background-color: transparent;
 }
