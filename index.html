@@ -203,25 +203,13 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-eightunits);
 }
-.hero-container {
-  position: relative;
-  overflow: hidden;
-  height: 100vh; /* istediğin kadar yüksek olabilir */
-  padding-top: 0 !important;
-}
-
-.hero-container::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url('https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/Stars%20sign.jpg?raw=true');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center top;
-  
-  /* Alt kısımdan %23 kesmek için yukarıya doğru kaydır */
-  transform: translateY(-23%);
-}
+.hero-container { 
+  background-image: url('https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/Stars%20sign.jpg?raw=true'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center 10%; 
+  padding-top: 0 !important; 
+  }
 
 /* Mobil cihazlar için */
 @media screen and (max-width: 768px) {
@@ -1307,7 +1295,7 @@
             </div>
           </div>
         </div>
-        deneme 2
+        deneme 3
         <div class="hero-container section-container">
           <div class="home-max-width1 max-width">
             <div class="home-content">
@@ -1612,6 +1600,7 @@ Currently an active team
     </script>
   </body>
 </html>
+
 
 
 
