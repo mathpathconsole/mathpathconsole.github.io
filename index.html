@@ -204,17 +204,23 @@
   padding-bottom: var(--dl-space-space-eightunits);
 }
 .hero-container {
-  background-image: url('https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/Stars%20sign.jpg?raw=true');
-  background-repeat: no-repeat;
-  /*background-position: center 23%;  Yatayda ortalanmış, dikeyde %23 aşağıya kaydırılmış */
- /* background-size: cover; contain Alanı tamamen kaplamak için */
- 
-
-  background-size: cover;
-  background-position: center 23%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* istediğin kadar yüksek olabilir */
   padding-top: 0 !important;
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('https://github.com/mathpathconsole/mathpathconsole.github.io/blob/main/Stars%20sign.jpg?raw=true');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
   
-  
+  /* Alt kısımdan %23 kesmek için yukarıya doğru kaydır */
+  transform: translateY(-23%);
 }
 
 /* Mobil cihazlar için */
@@ -1606,6 +1612,7 @@ Currently an active team
     </script>
   </body>
 </html>
+
 
 
 
